@@ -1,0 +1,63 @@
+body{
+    font-family: Roboto, sans-serif,Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.paises{
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+}
+
+.paises .card{
+    width: 300px;
+    height: 360px;
+    border-radius: 10px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, .3);
+    overflow: hidden;
+    margin: 20px;
+    text-align: center;
+    transition:  all 0.25s;
+}
+
+.paises .card:hover{
+    transform: translateY(-12px);
+    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.3);
+}
+
+.paises .card .card-img{
+    width: 300px;
+    height: 180px;
+}
+
+.paises .card .span-title{
+    color: #7d8597;
+    font-size: 12px;
+    text-transform: uppercase;
+    position: relative;
+    top: 6px;
+}
+
+.paises .card .card-title{
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #001233;
+    padding: 0 5px;
+    position: relative;
+    top: -10px;
+}
+
+
+
+/* Responsive */
+
+@media screen and (max-width: 768px){
+
+
+}
