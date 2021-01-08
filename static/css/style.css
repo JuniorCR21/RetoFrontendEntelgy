@@ -4,6 +4,29 @@ body{
     padding: 0;
 }
 
+nav{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+    background-color: #023e7d;
+    margin-bottom: 30px;
+}
+
+.logo{
+    color: #fff;
+    margin-left: 45px;
+}
+
+.logo img{
+    width: 55px;
+}
+
+.title-logo{
+    color: #fff;
+    margin-left: 8px;
+}
+
 .paises{
     width: 100%;
     max-width: 1200px;
@@ -15,13 +38,13 @@ body{
 
 .paises .card{
     width: 300px;
-    height: 360px;
+    height: 305px;
     border-radius: 10px;
     box-shadow: 0 2px 2px rgba(0, 0, 0, .3);
     overflow: hidden;
     margin: 20px;
     text-align: center;
-    transition:  all 0.25s;
+    transition:  transform 0.5s;
 }
 
 .paises .card:hover{
@@ -43,9 +66,9 @@ body{
 }
 
 .paises .card .card-title{
-    cursor: pointer;
     font-weight: 600;
     font-size: 16px;
+    cursor: pointer;
     text-transform: uppercase;
     color: #001233;
     padding: 0 5px;
@@ -53,11 +76,142 @@ body{
     top: -10px;
 }
 
+.paises .card .card-info{
+    position: relative;
+    top: -20px;
+}
+
+.modal-container{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    background: rgba(0, 0, 0, .3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.modal{
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px 25px;
+    margin: 20px;
+    width: 450px;
+    max-width: 100%;
+    text-align: center;
+}
+
+#title-modal{
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+#close-modal{
+    margin-top: 12px;
+    background: #0d1b2a;
+    height: 30px;
+    min-width: 80px;
+    border: none;
+    border-radius: 10px;
+    color: #eee;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#continente{
+    color: rgb(73, 73, 73);
+}
+
+.show{
+    pointer-events: auto;
+    opacity: 1;
+    transition:  opacity 0.6s;
+}
+
+.close{
+    pointer-events: none;
+    opacity: 0;
+    transition:  opacity 0.5s;
+}
+
+footer{
+    margin-top: 50px;
+    background: #001233;
+    height: auto;
+    width: 100%;
+    padding-top: 3px;
+    color: #fff;
+}
+
+.content-footer h3{
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 3rem;
+    display: flex;
+    font-weight: 600;
+    text-transform: uppercase;
+    justify-content: center;
+    margin-bottom: 7px;
+}
+
+.content-footer p{
+    max-width:  700px;
+    margin: 10px auto;
+    text-align: center;
+    line-height: 20px;
+    font-size: 13px;
+}
+
+.redes-sociales{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 25px 0;
+}
+
+.redes-sociales li{
+    margin: 0 20px 0 0;
+}
+
+.redes-sociales a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.footer-bottom{
+    background-color: #000b1d;
+    color: rgb(110, 110, 110);
+    font-size: 14px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 
 /* Responsive */
 
 @media screen and (max-width: 768px){
 
+    .title-logo{
+        display: none;
+    }
+
+    .logo{
+        margin-left: 15px;
+    }
+
+    .content-footer p{
+        max-width:  250px;
+    }
+
+    .content-footer h3{
+        font-size: 20px;
+    }
 
 }
